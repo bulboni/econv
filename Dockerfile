@@ -2,7 +2,7 @@ FROM debian
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt upgrade -y && apt install -y \
     ssh git wget nano curl python3 python3-pip tmate \
-    xfce4 xbase-clients \
+    xfce4 xvfb xserver-xorg-video-dummy policykit-1 xbase-clients \
     python3-packaging python3-psutil python3-pip python3-xdg python3-venv python3-tk python3-dev \
     libcairo2 libdrm2 libgbm1 libglib2.0-0 libgtk-3-0 \
     libnspr4 libnss3 libpango-1.0-0 libutempter0 \
